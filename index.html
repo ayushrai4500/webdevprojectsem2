@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <span class="logo-text">amazon</span><span class="logo-dot">.in</span>
+            </div>
+            <div class="nav-delivery">
+                <i class="fa-solid fa-location-dot map-icon"></i>
+                <div class="delivery-text">
+                    <p class="nav-text-small">Deliver to</p>
+                    <p class="nav-text-second">India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-fill">
+            <div class="search-container">
+                <select class="search-select">
+                    <option value="all">All</option>
+                </select>
+                <input type="text" id="search-input" class="search-input" placeholder="Search Amazon...">
+                <button id="search-btn" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-link">
+                <p class="nav-text-small">Hello, sign in</p>
+                <p class="nav-text-second">Account & Lists <i class="fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class="nav-link">
+                <p class="nav-text-small">Returns</p>
+                <p class="nav-text-second">& Orders</p>
+            </div>
+            <div id="cart-toggle" class="nav-cart">
+                <div class="cart-icon-container">
+                    <span id="cart-count">0</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="nav-text-second cart-label">Cart</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sub-navbar">
+        <div class="sub-nav-left">
+            <a href="#" class="sub-nav-item"><i class="fa-solid fa-bars"></i> All</a>
+            <a href="#" class="sub-nav-item">Fresh</a>
+            <a href="#" class="sub-nav-item">Amazon miniTV</a>
+            <a href="#" class="sub-nav-item">Sell</a>
+            <a href="#" class="sub-nav-item">Best Sellers</a>
+            <a href="#" class="sub-nav-item">Mobiles</a>
+            <a href="#" class="sub-nav-item">Today's Deals</a>
+            <a href="#" class="sub-nav-item">Electronics</a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1>Experience Premium Audio & Performance</h1>
+                    <p>Upgrade your daily essential gadgets with up to 40% off on top global brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-container">
+        <h2 id="section-title" class="section-title">Trending Products</h2>
+        
+        <div id="products-grid" class="products-grid">
+            </div>
+
+        <div id="no-products" class="no-products-message hidden">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>No products found matching your search.</h3>
+            <p>Please check the spelling or try alternative keywords.</p>
+        </div>
+    </main>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="sidebar-header">
+            <h3>Shopping Cart</h3>
+            <button id="close-sidebar" class="close-sidebar-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div id="sidebar-items-container" class="sidebar-items-container">
+            </div>
+
+        <div class="sidebar-footer">
+            <div class="subtotal-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <button id="clear-cart-btn" class="clear-cart-btn">Clear All Items</button>
+            <button class="checkout-btn">Proceed to Buy</button>
+        </div>
+    </div>
+
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <footer>
+        <a href="#" class="back-to-top">Back to top</a>
+        
+        <div class="footer-links-container">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">amazon</div>
+            <p class="copyright">© 1996-2026, Amazon.com, Inc. or its affiliates. Developed as a modern portfolio concept.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
